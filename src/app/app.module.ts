@@ -12,7 +12,8 @@ import { FormsComponent } from './views/forms/forms.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material/material.module';
 import { CalcNotaComponent } from './views/calc-nota/calc-nota.component';
-
+import { FilmsListComponent } from './views/films-list/films-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -24,7 +25,8 @@ import { CalcNotaComponent } from './views/calc-nota/calc-nota.component';
     FooterComponent,
     HomeComponent,
     FormsComponent,
-    CalcNotaComponent
+    CalcNotaComponent,
+    FilmsListComponent
   ],
   imports: [
     BrowserModule,
@@ -32,8 +34,8 @@ import { CalcNotaComponent } from './views/calc-nota/calc-nota.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule
-
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
